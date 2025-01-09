@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jeffrey Song</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <!--<li><a href="#experience">Experience</a></li> -->
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jeffrey Song</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
+          <li><a href="projects.html" onclick="toggleMenu()">Project</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Jeffrey Song profile Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jeffrey Song</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Song, Jeffrey - Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icons"
+            onClick="window.open('https://www.linkedin.com/in/jeffrey-song-uma/');"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub Profile"
+            class="icons"
+            onClick="window.open('https://github.com/jeffreycsong');"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icons"
+              />
+              <h3>Skills</h3>
+              <p>
+                Python, C, R, HTML, Java, <br />
+                MERN Stack (MongoDB, Express, React, Node.js)
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icons"
+              />
+              <h3>Education</h3>
+              <p>Bachelors of Science in<br />Computer Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a recent graduate from the University of Massachusetts
+              Amherst with a degree in Computer Engineering. Throughout my
+              academic career, I developed strong skills in programming
+              languages such as C and Python, which I applied in various
+              projects. I am currently seeking a full-time position where I can
+              contribute my technical knowledge and problem-solving skills.
+              While I am focused on securing a full-time role, I am also open to
+              internship opportunities to further develop my skills and gain
+              hands-on experience in the field.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icons arrow"
+        onclick="location.href='./experience'"
+      /> -->
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
